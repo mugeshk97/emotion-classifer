@@ -3,9 +3,7 @@ const video= document.getElementById("video");
 Promise.all([
     faceapi.nets.tinyFaceDetector.loadFromUri("/weights"),
     faceapi.nets.faceLandmark68Net.loadFromUri("/weights"),
-    faceapi.nets.faceRecognitionNet.loadFromUri("/weights"),
-    faceapi.nets.faceExpressionNet.loadFromUri("/weights"),
-    faceapi.nets.ageGenderNet.loadFromUri("/weights")
+    faceapi.nets.faceExpressionNet.loadFromUri("/weights")
   ]).then(startVideo);
   
 
